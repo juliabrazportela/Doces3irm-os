@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: oklch(97% 0.02 85);
+  --color-cream-dark: oklch(93% 0.035 82);
+  --color-caramel: oklch(62% 0.14 55);
+  --color-gold: oklch(78% 0.16 78);
+  --color-brown: oklch(27% 0.06 50);
+  --color-brown-deep: oklch(17% 0.04 50);
+  --color-leaf: oklch(50% 0.15 140);
+  --color-baby-blue: #bae6fd;
+
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Nunito", sans-serif;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delay: float 6s ease-in-out infinite 3s;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+/* Custom styling utilities */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-brown-deep);
+}
+
+.shadow-warm {
+  box-shadow: 0 10px 30px -10px oklch(17% 0.04 50 / 0.15), 
+              0 1px 3px oklch(17% 0.04 50 / 0.05);
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 20px -2px oklch(17% 0.04 50 / 0.06);
+}
+
+/* Marquee layout helper */
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100%;
+  justify-content: space-around;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+/* Floating animation utilities */
+.float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.float-delay {
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 2.5s;
+}
+
+/* Text selection highlight */
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-brown-deep);
+}
+
+/* Fade-in animation used by mobile menu drawer */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out both;
+}
