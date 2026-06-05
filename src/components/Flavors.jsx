@@ -10,7 +10,7 @@ export default function Flavors() {
         {
           name: "Leite Cremoso Tradicional",
           type: "Clássico",
-          image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=400",
+          image: "/leite-cremoso.png",
         },
         {
           name: "Leite com Chocolate",
@@ -20,7 +20,7 @@ export default function Flavors() {
         {
           name: "Leite com Coco",
           type: "Tropical",
-          image: "https://images.unsplash.com/photo-1541795795328-f073b763494e?auto=format&fit=crop&q=80&w=400",
+          image: "/leite-coco.png",
         },
       ],
     },
@@ -32,32 +32,32 @@ export default function Flavors() {
         {
           name: "Leite com Goiaba",
           type: "Frutas",
-          image: "https://images.unsplash.com/photo-1533038590840-1cde6b66b706?auto=format&fit=crop&q=80&w=400",
+          image: "/leite-goiaba.png",
         },
         {
           name: "Leite com Banana",
           type: "Frutas",
-          image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&q=80&w=400",
+          image: "/leite-banana.png",
         },
         {
           name: "Leite com Mamão",
           type: "Frutas",
-          image: "https://images.unsplash.com/photo-1526318896980-cf78c636d023d?auto=format&fit=crop&q=80&w=400",
+          image: "/leite-mamao.png",
         },
         {
           name: "Leite com Geleia de Morango",
           type: "Geleia",
-          image: "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&q=80&w=400",
+          image: "/geleia-morango.png",
         },
         {
           name: "Leite com Geleia de Ameixa",
           type: "Geleia",
-          image: "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&q=80&w=400",
+          image: "/leite-ameixa.png",
         },
         {
           name: "Leite com Geleia de Maracujá",
           type: "Geleia",
-          image: "/geleia-maracuja.png",
+          image: "/leite-maracuja.png",
         },
       ],
     },
@@ -69,17 +69,17 @@ export default function Flavors() {
         {
           name: "Cocada de Jaca",
           type: "Frutas",
-          image: "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&q=80&w=400",
+          image: "/cocadas.png",
         },
         {
           name: "Cocada de Leite",
           type: "Clássico",
-          image: "https://images.unsplash.com/photo-1517093602195-b40af9688b46?auto=format&fit=crop&q=80&w=400",
+          image: "/cocada-leite.png",
         },
         {
           name: "Cocada de Coco",
           type: "Tradicional",
-          image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=400",
+          image: "/cocada-tradicional.png",
         },
       ],
     },

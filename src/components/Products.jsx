@@ -18,7 +18,7 @@ export default function Products() {
     {
       title: "Cocadas",
       description: "A linha complementar artesanal — cocadas de corte (leite, coco e jaca) e cocada cremosa para ampliar as opções sem perder a tradição.",
-      image: "/cocada.jpg",
+      image: "/cocadas.png",
       fallbackImage: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=400",
     },
   ];
